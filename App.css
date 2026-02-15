@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #e0e0e0;
+  transform: scale(1.03);
+}
+
+/* Back Button */
+.backBtn {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #282c34;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
